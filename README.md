@@ -24,7 +24,7 @@ Navigate to localhost:3000 in your browser.
 
 ## Testing
 
-Jest has been included in the project. Create `spect.ts` files as you develop. To run those test files, run:
+Jest has been included in the project. Create `{myfile}.spec.ts` files as you develop. To run those test files, run:
 
 ```
 npm run test
