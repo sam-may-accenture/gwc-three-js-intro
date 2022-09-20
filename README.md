@@ -7,7 +7,7 @@ This project is meant to give you a quick and limited solution for quickly apply
 Download this repository to your machine and install the project.
 
 ```
-yarn install
+npm install
 ```
 
 ## Start the App
@@ -17,7 +17,7 @@ The app is served with an express server for development that is hosted from por
 Run:
 
 ```
-yarn start
+npm run start
 ```
 
 Navigate to localhost:3000 in your browser.
@@ -27,7 +27,7 @@ Navigate to localhost:3000 in your browser.
 Jest has been included in the project. Create `spect.ts` files as you develop. To run those test files, run:
 
 ```
-yarn test
+npm run test
 ```
 
 ## Styles

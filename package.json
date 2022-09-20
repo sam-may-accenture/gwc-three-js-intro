@@ -1,5 +1,5 @@
 {
-  "name": "sample-three-ts",
+  "name": "gwc-three-js-intro",
   "version": "1.0.0",
   "description": "a playground for learning three js",
   "main": "index.ts",
