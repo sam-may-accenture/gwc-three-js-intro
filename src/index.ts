@@ -36,14 +36,14 @@ const loader = new GLTFLoader();
 const onLoadModel = (gltf: GLTF) => {
   console.log(gltf); // for debugging purposes to inspect the loaded object
   const mesh = gltf.scene;
-  const scale_factor = 5;
+  const scale_factor = 0.05;
   mesh.scale.set(scale_factor, scale_factor, scale_factor);
   mesh.position.x = 0;
   mesh.position.y = 0;
   mesh.position.z = 0;
   scene.add(mesh);
 };
-loader.load("Flower.glb", onLoadModel);
+loader.load("Parrot.glb", onLoadModel);
 
 // set our camera's position and render the scene
 camera.position.z = 5;
