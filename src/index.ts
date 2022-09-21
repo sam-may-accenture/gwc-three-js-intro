@@ -1,6 +1,7 @@
 import * as THREE from "three";
 import { GLTF } from "./module_declarations/GLTFLoader";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
+import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 import "./index.scss";
 
 // create our scene and add a perspective camera
@@ -8,7 +9,7 @@ const scene = new THREE.Scene();
 const fov = 75;
 const aspect = window.innerWidth / window.innerHeight;
 const near = 0.1;
-const far = 10;
+const far = 100;
 const camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
 
 // select the input element and set the size of what we are painting
@@ -16,6 +17,8 @@ const canvas = document.querySelector("#c") as HTMLCanvasElement;
 const renderer = new THREE.WebGLRenderer({ canvas });
 renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement);
+// add controls to our camera
+const controls = new OrbitControls(camera, renderer.domElement);
 
 // add some lighting to the scene
 const light_color = 0xffffff;
@@ -30,7 +33,7 @@ scene.add(ambientLight);
 const loader = new GLTFLoader();
 // create our functions for managing the load lifecycle
 const onLoadModel = (gltf: GLTF) => {
-  console.log(gltf);
+  console.log(gltf); // for debugging purposes to inspect the loaded object
   const mesh = gltf.scene;
   const scale_factor = 5;
   mesh.scale.set(scale_factor, scale_factor, scale_factor);
