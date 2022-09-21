@@ -1,7 +1,7 @@
 import * as THREE from "three";
-import { GLTF, GLTFLoader } from "./module_declarations/GLTFLoader";
+import { GLTF } from "./module_declarations/GLTFLoader";
+import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import "./index.scss";
-import { Vector3 } from "three";
 
 // create our scene and add a perspective camera
 const scene = new THREE.Scene();
