@@ -2,6 +2,12 @@
 
 This project is meant to give you a quick and limited solution for quickly applying and prototyping something in three.js.
 
+## Prerequisites
+
+- Download and install [node js](https://nodejs.org/en/download/).
+- Configure your PATH variable to have `npm` available in it.
+- Download a code editor of your choice. [Download and install VSCode](https://code.visualstudio.com/download).
+
 ## Installation
 
 Download this repository to your machine and install the project.
