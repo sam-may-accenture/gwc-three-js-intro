@@ -14,6 +14,8 @@ app.use(
   })
 );
 
+app.use(express.static("models"));
+
 app.get("/", (req, res) => {
   res.set(
     "Content-Security-Policy",
