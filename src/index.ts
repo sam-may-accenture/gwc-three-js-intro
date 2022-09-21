@@ -16,6 +16,7 @@ const camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
 const canvas = document.querySelector("#c") as HTMLCanvasElement;
 const renderer = new THREE.WebGLRenderer({ canvas });
 renderer.setSize(window.innerWidth, window.innerHeight);
+renderer.setClearColor(0x0088ff);
 document.body.appendChild(renderer.domElement);
 // add controls to our camera
 const controls = new OrbitControls(camera, renderer.domElement);
@@ -24,7 +25,7 @@ const controls = new OrbitControls(camera, renderer.domElement);
 const light_color = 0xffffff;
 const light_intensity = 1;
 const light = new THREE.DirectionalLight(light_color, light_intensity);
-light.position.set(-1, 2, 4);
+light.position.set(-4, 6, 1);
 scene.add(light);
 const ambientLight = new THREE.AmbientLight(light_color, light_intensity / 2);
 scene.add(ambientLight);
