@@ -38,6 +38,11 @@ scene.add(cube3);
 cube1.position.x = 0;
 cube2.position.x = -2;
 cube3.position.x = 2;
+// rotations made easy!
+const rotation_angle = Math.PI / 4;
+cube1.rotateX(rotation_angle);
+cube2.rotateY(rotation_angle);
+cube3.rotateZ(rotation_angle);
 
 // set our camera's position and render the scene
 camera.position.z = 5;
