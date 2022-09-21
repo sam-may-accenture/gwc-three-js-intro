@@ -43,6 +43,10 @@ const rotation_angle = Math.PI / 4;
 cube1.rotateX(rotation_angle);
 cube2.rotateY(rotation_angle);
 cube3.rotateZ(rotation_angle);
+// translations
+cube1.translateZ(-1);
+cube2.translateY(1);
+cube3.translateOnAxis(new THREE.Vector3(-1, -1, -1), 1);
 
 // set our camera's position and render the scene
 camera.position.z = 5;
