@@ -2,6 +2,8 @@
 
 This project is meant to give you a quick and limited solution for quickly applying and prototyping something in three.js.
 
+You are able to quickly spin up this sample application and jump into making changes in `src/index.ts`.
+
 ## Prerequisites
 
 - Download and install [node js](https://nodejs.org/en/download/).
